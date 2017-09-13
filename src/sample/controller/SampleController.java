@@ -17,13 +17,15 @@ public class SampleController
 		secondCircle = new PlayDohCircle();
 		
 		PlayDohCircle thirdCircle;
-		thirdCircle = new PlayDohCircle(5);
+		thirdCircle = new PlayDohCircle(15);
 		
 		PlayDohSquare mySquare = new PlayDohSquare(1);
 		PlayDohSquare bigSquare = new PlayDohSquare();
 		
-		System.out.println("Hereis my play doh circle");
+		System.out.println("Here is my play doh circle");
 		System.out.println(firstCircle);
+		System.out.println("Here is my second circle " + thirdCircle);
+		
 		
 		
 		
@@ -40,5 +42,8 @@ public class SampleController
 		System.out.println("Please type your favorite food");
 		String answer = firstScanner.nextLine();
 		System.out.println("Oh, you like to eat " + answer);
+		System.out.println("How old are you?????????");
+		int ageAnswer = firstScanner.nextInt();
+		System.out.println("You said that you are " + ageAnswer + " years old");
 	}
 }
